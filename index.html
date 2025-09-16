@@ -1,46 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>welcome to ts website</h1>
-    <p>im ready to code, I promise</p>
-    <p>there is a picture of a cat owl, its pretty tuff</p>
-<!-- #1 
-INSERT AN IMAGE -->
-    <!-- Save an image in the same folder as this html file -->
-    <!-- Add it to your page using the img tag -->
-    <!-- Add alternate text under the alt attribute -->
-<img src="Ant.jpg.png" alt="Placeholder Image" width="100" height="100">
-<p>here are some reasons why the owl is tuff</p>
-<ol>
-<li>he is a owl</li>
-<li>he is a cat</li>
-<li>he is tuff asf</li>
-</ol>  
- <p><a href="https://www.wikipedia.org/">(wiki)</a></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
 
+    <title>i am da Fortune Teller</title>
 
-
-<!-- #4
-TURN AN IMAGE INTO A LINK -->
-    <!-- Nest the image tag INSIDE the a tag.  -->
-    <!-- You want to put it in between the open and close tags! -->
-    <a href="https://www.wikipedia.org/"><img src="Ant.jpg.png" alt="Placeholder Image" width="100" height="100"></a>
-    <p>ts is a image and if you click it it redirects you to wikipedia.</p>
-
-
-<!-- #5
-ADD A LINK TO ANOTHER HTML PAGE  -->
-    <!-- Add another a tag, but this time, use the relative path for the href attribute -->
-    <!-- The full path is what you can open in your browser BUT only on your computer -->
-    <!-- The relative path takes you from your current location (in this case this folder) so it will work in github when you push your folder -->
-
-    <p><a href="https://www.youtube.com">here is a link to youtube</a></p>
-
-
-</body>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      i am da Fortune Teller 😭
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
 </html>
